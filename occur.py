@@ -27,9 +27,7 @@ def occur(p):
     p = p.lower()
     letters = 'abcdefghijklmnopqrstuvwxyz'
     for key in letters:
-        if key in p:
-            continue
-        else:
+        if key not in p:
             c = 1
             print key,"is missing"   
     if c==0:
