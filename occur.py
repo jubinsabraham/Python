@@ -11,7 +11,7 @@ def mult(num):
 
 
 def disp(num):
-    for i in xrange(1,num+1):
+    for i in range(1,num+1):
         if (i%15)==0:
             print("FizzBizz")
         elif i%3==0:
