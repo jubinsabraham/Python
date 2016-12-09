@@ -1,6 +1,6 @@
 def tables(n,limit):
     for i in range(1,limit+1):
-        print '{:2}'.format(n),"*",'{:2}'.format(i),"=",'{:2}'.format(n*i)
+        print ("{:2} x {:2} = {:2}".format(n, i, n*i))
 
 
 def mult(num):
