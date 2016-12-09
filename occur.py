@@ -27,7 +27,7 @@ def occur(p):
     p = p.lower()
     letters = 'abcdefghijklmnopqrstuvwxyz'
     for key in letters:
-        if p.count(key) > 0:
+        if key in p:
             continue
         else:
             c = 1
