@@ -23,18 +23,14 @@ def disp(num):
 
 
 def occur(p):
-    c = 0
     p = p.lower()
     letters = 'abcdefghijklmnopqrstuvwxyz'
     for key in letters:
         if key not in p:
-            c = 1
-            print key,"is missing"   
-    if c==0:
-        print "True"
-        print " Panagram"
-    else:
-        print "False"
+            print key," is missing"   
+            return False
+    return True
+
 
 
 
@@ -58,6 +54,6 @@ if __name__ == '__main__':
     tables(6,12) 
     mult(5)                   
     disp(15)
-    occur("the Quick brown fox jumps over the lazy dog")
+    print (occur("the Quick brown fox jumps over the lazy dog"))
     change(1574)
     freq("jubinnnn")
