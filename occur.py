@@ -32,13 +32,11 @@ def occur(p):
     return True
 
 
-
-
 def change(money):
     for i in [1000,500,100,50,20,10,1]:
         denom = money/i
         if denom > 0:
-            print i,"*",denom,"=",i*denom
+            print "{:4} x {} = {}".format(i, denom , i*denom)
             money = money - (i * denom )
 
 
