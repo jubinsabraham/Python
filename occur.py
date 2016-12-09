@@ -1,8 +1,6 @@
 def tables(n,limit):
     for i in range(1,limit+1):
         print '{:2}'.format(n),"*",'{:2}'.format(i),"=",'{:2}'.format(n*i)
-tables(6,12)
-
 
 
 def mult(num):
@@ -10,9 +8,6 @@ def mult(num):
            for j in range(1,num+1):
                   print('{:2}'.format(i*j)),
            print("\n")
-mult(5)                   
-
-
 
 
 
@@ -26,7 +21,7 @@ def disp(num):
                          print("Bizz")
              else:
                          print(i)
-disp(15)
+
                          
 
 def occur(p):
@@ -44,7 +39,7 @@ def occur(p):
         print " Panagram"
     else:
         print "False"
-occur("the Quick brown fox jumps over the lazy dog")
+
 
 
 def change(money):
@@ -53,7 +48,7 @@ def change(money):
         if denom > 0:
          print i,"*",denom,"=",i*denom
          money = money - (i * denom )
-change(1574)
+
 
 def freq(strings):
    d = {}
@@ -61,4 +56,12 @@ def freq(strings):
        a = strings.count(i)
        d.update({i: a})
    print(str(d))
-freq("jubinnnn")
+
+
+if __name__ == '__main__':
+    tables(6,12) 
+    mult(5)                   
+    disp(15)
+    occur("the Quick brown fox jumps over the lazy dog")
+    change(1574)
+    freq("jubinnnn")
