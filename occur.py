@@ -25,8 +25,8 @@ def disp(num):
 def occur(p):
     c = 0
     p = p.lower()
-    symbol = 'abcdefghijklmnopqrstuvwxyz'
-    for key in symbol:
+    letters = 'abcdefghijklmnopqrstuvwxyz'
+    for key in letters:
         if p.count(key) > 0:
             continue
         else:
