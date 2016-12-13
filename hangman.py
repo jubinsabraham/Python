@@ -8,9 +8,19 @@ def select_word(fname = "/usr/share/dict/words"):
                 words.append(i)
     return random.choice(words)
 a = select_word()
-for i in a:
-    print "#",
-character = raw_input("enter a character")
-if character in a:
-    print "yes"
+def place_holder(a,guessed):
+    print a
+    message = ' '
+    for i in a:
+        if guessed == i:
+           message = message.strip() + guessed
+        else:
+           message = message.strip() + "#"
+    return message
+count = 0
+while count < 5:
+    guessed = raw_input("enter a char:")
+    hash_message = place_holder(a,guessed)
     
+    print hash_message
+    count = count + 1 
