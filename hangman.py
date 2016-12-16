@@ -33,6 +33,8 @@ while count > 0:
     print "Wrong Guesses:",''.join(wrong_guess_list)
     print "Turns remaining:",count
     indices = [i for i, x in enumerate(a) if x == guessed]
+    if  indices:
+        print "Secret Word Contains:",guessed
     for i in range(len(indices)):
         pos = indices[i]
         hash_list[pos] = guessed
